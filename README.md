@@ -18,6 +18,11 @@ https://drive.google.com/drive/folders/1j8oZGBm5wskjtK8EsSeW6IM5YlW743xB?usp=sha
 * Notebook statistical_analysis_database: It contains code to do a statistical analysis of the demographic data from the database
 * Notebook detect_qrs: It contains an example to detect the QRS complexes, the heart rate and its periodicity and variability, and a comparison of the results between the implemented algorithm and the neurokit2 library. 
 
+Libraries used in this challenge:
+1. Neurokit2: Evaluating the results
+2. wdfb: Reading the data from physionet
+3. Scipy signal: To apply Butterworth passband filter
+
 ### Methodology
 The implemented algorithm follows two main steps: The QRS complexes detection and the Q, R, and S peaks identification
 
