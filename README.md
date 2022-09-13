@@ -68,9 +68,12 @@ The second part of the algorithm aims at adjusting the QRS complexes detected an
       
       
  Finally, the heart rate, and its periodicity and variability has been calculated as follows: 
-     * Heart rate = (number of r peaks + 1) / (number of samples * 1/sample frequency)
-     * Periodicity = average(time(r_peak[i+1]-r_peak[i]))
-     * Variability = std(time(r_peak[i+1]-r_peak[i]))
+ 
+1. Heart rate = (number of r peaks + 1) / (number of samples * 1/sample frequency)
+     
+2. Periodicity = average(time(r_peak[i+1]-r_peak[i]))
+     
+3. Variability = std(time(r_peak[i+1]-r_peak[i]))
      
  * The heart rate contains a +1 factor, due to the algorithm cannot detect the last peak of the signal. 
  
