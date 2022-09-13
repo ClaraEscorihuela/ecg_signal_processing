@@ -4,9 +4,10 @@ This repository contains code to detect the QRS complexes and the heart rate in 
 
 The methodology goes as follows: The signal is denoised by a Butterworth passband filter. The next step is differentiation, followed by squaring and integration with a moving windows filter. The resulting signal contains information about the slope and the duration of the QRS complex, therefore, as fig 5 in [1] shows, finding its raising intervals allows us to identify the QRS complexes. Because of physiological reasons, the minimum time for a valid QRS complex is 0.06s, moreover, there should be a 0.2s refractory period before the next one can occur. Finally, the Q, R, and S peaks are detected in each complex by selecting the local maximum and the two local minimums. The methods section presents a detailed explanation of the designed algorithm [1]. 
 
-To evaluate its performance the number of QRS complexes detected in each signal has been compared to the number of QRS complexes detected while applying the neurokit2 library. The neurokit2 library allows to process ECG signals and detects the T, QRS, and P segments as well as their onset and offset points: (https://neuropsychology.github.io/NeuroKit/.) The overall performance of the algorithm shows a mean error of -3.96 +- 20.04, and an absolute error of 5.93 +- 19.24 respectively while comparing the detected peaks by eq. 1: 
+To evaluate its performance the number of QRS complexes detected in each signal has been compared to the number of QRS complexes detected while applying the neurokit2 library. The neurokit2 library allows to process ECG signals and detects the T, QRS, and P segments as well as their onset and offset points: (https://neuropsychology.github.io/NeuroKit/.) The overall performance of the algorithm shows a mean error of -3.96 +- 20.04, and an absolute error of 5.93 +- 19.24 respectively while comparing the detected peaks by eq. 1 and eq.2: 
 
 mean error = (R peaks detected by designed algorithm - R peaks detected by neurokit2 library)/number of ECG (eq.1)
+
 absolute mean error = |(R peaks detected by designed algorithm - R peaks detected by neurokit2 library)|/number of ECG signals (eq.1)
 
 ### Implementation
@@ -14,8 +15,8 @@ The following link contains a folder in google drive with ECG data from physione
 
 https://drive.google.com/drive/folders/1j8oZGBm5wskjtK8EsSeW6IM5YlW743xB?usp=sharing
 
-Notebook statistical_analysis_database: It contains code to do a statistical analysis of the demographic data from the database
-Notebook detect_qrs: It contains an example to detect the QRS complexes, the heart rate and its periodicity and variability, and a comparison of the results between the implemented algorithm and the neurokit2 library. 
+* Notebook statistical_analysis_database: It contains code to do a statistical analysis of the demographic data from the database
+* Notebook detect_qrs: It contains an example to detect the QRS complexes, the heart rate and its periodicity and variability, and a comparison of the results between the implemented algorithm and the neurokit2 library. 
 
 ### Methodology
 The implemented algorithm follows two main steps: The QRS complexes detection and the Q, R, and S peaks identification
