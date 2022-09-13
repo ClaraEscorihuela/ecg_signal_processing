@@ -94,6 +94,7 @@ This section proposes possible improvements and curiosities to this challenge:
 
 4. Apply different techniques to calculate heart rate, such as calculating the heart rate in a window of 1 second over the entire signal and averaging the results
 
+5. Evaluate the algorithm with a cardiologist. Signals from some patients present strange (ecg3 patient 6, and ecg4 patient 7) waveforms/patterns. A further analysis on these signals should be displayed to validate the algorithm performance. 
 
 
 
