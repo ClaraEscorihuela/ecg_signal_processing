@@ -51,7 +51,7 @@ Derivation 'i' signal is used to detect the position of the QRS complexes. The p
        Function: slope_duration in the qrs_detection.py file
        
 Figure 1 shows the methodology to detect the QRS complexes on the designed agorithm. Rhe ECG and the filtered ECG signals are presented in blue, and the derivative and the integration are shown in red and black colors respectively. Green periods present the QRS complex timing, which correpons with the increasing slope of the integration.  
-![alt text]([http://url/to/img.png](https://github.com/ClaraEscorihuela/ecg_signal_processing/blob/main/ecg_signal_processing_photoProcess.jpg))
+![alt text](https://github.com/ClaraEscorihuela/ecg_signal_processing/blob/main/ecg_signal_processing_photoProcess.jpg)
 
        
 #### **2. QRS Complex adjustment, Q-R-S peak detection:** 
