@@ -71,7 +71,7 @@ The second part of the algorithm aims at Finding the Q-R-S peaks in each one of 
       Function: final corrections
       
  Figure 2 shows and example of the QRS complexes detection. 
- ![alt text]([http://url/to/img.png](https://github.com/ClaraEscorihuela/ecg_signal_processing/blob/main/ecg_photo_peaks.jpg))
+ ![alt text](https://github.com/ClaraEscorihuela/ecg_signal_processing/blob/main/ecg_photo_peaks.jpg)
  
       
  Finally, the heart rate, and its periodicity and variability has been calculated as follows: 
@@ -90,7 +90,7 @@ To evaluate the performance of the algorithm the number of r peaks detected by t
 
 However, while excluding these signals, the mean and absolute mean error are reduced to -3.96 +- 20.04 and 5.93 +- 19.24 respectively. Besides, the designed algorithm cannot detect the last r peak of the signal, therefore adding this value will reduce by one more point the different number of peaks. It is important to consider that as figure 3 shows, for some signals the neurokit library cannot detect QRS complexes that the designed algorithm can. 
 
-![alt text]([http://url/to/img.png](https://github.com/ClaraEscorihuela/ecg_signal_processing/blob/main/ecg_comparation.jpg))
+![alt text](https://github.com/ClaraEscorihuela/ecg_signal_processing/blob/main/ecg_comparation.jpg)
  
 
 ### Improvements and limitations
