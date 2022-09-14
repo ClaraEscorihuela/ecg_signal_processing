@@ -6,9 +6,9 @@ The methodology goes as follows: The signal is denoised by a Butterworth passban
 
 To evaluate its performance the number of QRS complexes detected by the neurokit2 library in each ECG signal has been set as reference point. The neurokit2 library allows to process ECG signals and detects the T, QRS, and P segments as well as their onset and offset points: (https://neuropsychology.github.io/NeuroKit/.) The overall performance of the algorithm shows a mean error of -3.96 +- 20.04, and an absolute error of 5.93 +- 19.24 respectively while comparing the detected peaks by eq.1 and eq.2: 
 
-* mean error = $$\frac{(N_{R,d}- (N_{R,n})}\text{N_s}$$ (eq.1)
+* mean error = $$\frac{(N_{R,d}- (N_{R,n})}{N_{s}}$$ (eq.1)
 
-* absolute mean error = $$|\frac{(N_{R,d}- (N_{R,n})}|\text{N_s}$$  (eq.2)
+* absolute mean error = $$|\frac{(N_{R,d}- (N_{R,n})}|{N_{s}}$$  (eq.2)
 
 ### Implementation
 The following link contains a folder in google drive with ECG data from physionet, two Colab notebooks, a library called signal_processing with three .py files (analyze_data, ecg_detection, and analyze_data), and a csv file with the results (heart rate, heart rate periodicity, heart rate variability, number of peaks detected and number of peaks detected by neurokit2). To reproduce and try its implementation create an "acceso directo" of this folder in your folder "mi unidad" in your google drive. Finally, open the two Colab notebooks from Colab:
