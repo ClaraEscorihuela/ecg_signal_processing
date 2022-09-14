@@ -6,7 +6,7 @@ The methodology goes as follows: The signal is denoised by a Butterworth passban
 
 To evaluate its performance the number of QRS complexes detected by the neurokit2 library in each ECG signal has been set as reference point. The neurokit2 library allows to process ECG signals and detects the T, QRS, and P segments as well as their onset and offset points: (https://neuropsychology.github.io/NeuroKit/.) The overall performance of the algorithm shows a mean error of -3.96 +- 20.04, and an absolute error of 5.93 +- 19.24 respectively while comparing the detected peaks by eq.1 and eq.2: 
 
-* mean error = $$\frac{(R peaks detected by designed algorithm - R peaks detected by neurokit2 library)}{number of ECG}$$ (eq.1)
+* mean error = $$\frac{\text{(R peaks detected by designed algorithm}- \text{R peaks detected by neurokit2 library})}\text{number of ECG signals}$$ (eq.1)
 
 * absolute mean error = $$|(R peaks detected by designed algorithm - R peaks detected by neurokit2 library)|/number of ECG signals$$ (eq.2)
 
