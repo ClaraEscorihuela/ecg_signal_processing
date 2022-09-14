@@ -76,7 +76,7 @@ The second part of the algorithm aims at Finding the Q-R-S peaks in each one of 
       
  Finally, the heart rate, and its periodicity and variability has been calculated as follows: 
  
-1. $$HR = \frac(N_{R,d} + 1) {N_{s} * \frac{1}/{fs}}$$
+1. $$HR = \frac{(N_{R,d} + 1)} {N_{s} * \frac{1}/{fs}}$$
      
 2. $$Periodicity = avg(t(R_{peak}[i+1]-R_{peak}[i]))$$
      
@@ -109,5 +109,5 @@ This section proposes possible improvements and limitations of the designed algo
 
 
 [1] PAN, Jiapu; TOMPKINS, Willis J. "A real-time QRS detection algorithm." IEEE transactions on biomedical engineering, 1985, no 3, p. 230-236.
-[2] D. S. Raju, M. S. Manikandan, and R. Barathram. “An automated method for detecting systolic peaks from arterial blood pressure signals” In Proceedings of the 2014 IEEE Students Technology Symposium, 2014, pp. 41–46
+[2] D. S. Raju, M. S. Manikandan, and R. Barathram. “An automated method for detecting systolic peaks from arterial blood pressure signals” In Proceedings of the 2014 IEEE Students Technology Symposium, 2014, pp. 41–46.
 [3] Es.wikipedia.org. 2022. Complejo QRS - Wikipedia, la enciclopedia libre. [online] Available at: <https://es.wikipedia.org/wiki/Complejo_QRS> [Accessed 14 September 2022].
