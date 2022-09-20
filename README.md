@@ -109,5 +109,7 @@ This section proposes possible improvements and limitations of the designed algo
 
 
 [1] PAN, Jiapu; TOMPKINS, Willis J. "A real-time QRS detection algorithm." IEEE transactions on biomedical engineering, 1985, no 3, p. 230-236.
+
 [2] D. S. Raju, M. S. Manikandan, and R. Barathram. “An automated method for detecting systolic peaks from arterial blood pressure signals” In Proceedings of the 2014 IEEE Students Technology Symposium, 2014, pp. 41–46.
+
 [3] Es.wikipedia.org. 2022. Complejo QRS - Wikipedia, la enciclopedia libre. [online] Available at: <https://es.wikipedia.org/wiki/Complejo_QRS> [Accessed 14 September 2022].
