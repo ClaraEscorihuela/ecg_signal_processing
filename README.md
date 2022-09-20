@@ -76,11 +76,11 @@ The second part of the algorithm aims at Finding the Q-R-S peaks in each one of 
       
  Finally, the heart rate, and its periodicity and variability has been calculated as follows: 
  
-1. $$HR = \frac{(N_{R,d} + 1)} {N_{s} * \frac{1}/{fs}}$$
+1. $$HR = \frac{(N_{R,d} + 1)} {N_{s} * \frac{1}{fs}}$$
      
-2. $$Periodicity = avg(t(R_{peak}[i+1]-R_{peak}[i]))$$
+2. $$Periodicity = avg((R_{peak}[i+1]-R_{peak}[i])*\frac{1}{fs})$$
      
-3. $$Variability = std(t(R_{peak}[i+1]-R_{peak}[i]))$$
+3. $$Variability = std(t(R_{peak}[i+1]-R_{peak}[i])*\frac{1}{fs})$$
      
  * The heart rate contains a +1 factor, due to the algorithm cannot detect the last peak of the signal. 
  
